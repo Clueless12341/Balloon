@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=Black+Han+Sans&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;700;800;900&family=Press+Start+2P&family=Roboto+Mono:wght@400;500;600;700&family=Shrikhand&family=Silkscreen&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .objectContainer {
+        width: 100%;
+        height: 3rem;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.balloonIcon {
+    width: 70px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1;
+}
+
+.scoreSection {
+    width: 30rem;
+    height: max-content;
+    margin-top: 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+
+    p {
+        font-size: 1.7rem;
+        padding: 12px 35px;
+        border-radius: 12px;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+        background-color: white;
+    }
+}
+
+.gameStats {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .gameover {
+        font-size: 3rem;
+    }
+
+    .endingScore {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+}
+
+.startBtn {
+    font-size: 1.5rem;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    scale: 0.9;
+
+    &:hover {
+        scale: 1;
+    }
+}
